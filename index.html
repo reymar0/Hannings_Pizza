@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hanning's</title>
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <!-- header section starts  -->
+        <header>
+            <nav class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <div class="logo"><h1>Hanning's</h1></div>
+
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#location">LOCATION</a></li>
+            </ul>
+            </nav>
+        </header>
+        <!-- header section ends -->
+
+        <!-- home section starts  -->
+        <main class="home" id="home">
+            <div class="content">
+                <h3>Hanning's Pizza</h3>
+                <p>"Where every slice tells a story of flavor."</p>
+            </div>
+        </main>
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+        <section class="about" id="about">
+
+            <h1 class="heading"></h1>
+
+            <div class="row">
+                    
+                <div class="video-container">
+                    <video src="Pizza cinematic.mp4" loop autoplay muted></video>
+                </div>
+
+                <div class="content">
+                    <article>
+                        <h1>Why Choose Us</h1>
+                        <p> Our products is budget friendly and delicious, We also make sure that's all of our 
+                            ingredients is top quality and fresh so that's why our costumers trusted us until now.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- about section ends -->
+
+
+        <!-- prodcuts section starts  -->
+
+        <section class="products" id="products">
+            
+
+            <h1 class="heading">Our Products</h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/Hawaiian.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Hawaiian Pizza</h3>
+                                <div class="price"> ₱120 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/Pepperoni.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Pepperoni Pizza</h3>
+                                <div class="price"> ₱120 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/Overload.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Overload Pizza</h3>
+                                <div class="price"> ₱140 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/R Burger.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Regular Burger</h3>
+                                <div class="price"> ₱38 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/C Burger.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Cheese Burger</h3>
+                                <div class="price"> ₱48 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <div class="image">
+                            <img src="fla/Fries.png" alt="">
+                        </div>
+                        <div class="content">
+                            <figcaption>
+                                <h3>Fries</h3>
+                                <div class="price"> ₱30 </div>
+                            </figcaption>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- prodcuts section ends -->
+
+        <!-- contact section starts  -->
+
+        <section class="contact" id="contact">
+
+            <h1 class="heading"> <span> Contact </span> Us </h1>
+
+            <div class="row">
+
+                <form id="myForm" action="">
+                    <fieldset>
+                        <legend>Information</legend>
+                        <input type="text" id="name" placeholder="Name" class="box">
+                        <input type="email" id="email" placeholder="Email" class="box">
+                        <input type="tel" id="contact" placeholder="Contact Number" class="box">
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message" class="box" placeholder="..." id="" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Submit" class="btn">
+                    </fieldset>
+                </form>
+
+                <div>
+                    <p>Drag the Pizza into the box:</p>
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <br>
+                    <img id="drag1" src="pizza.png" draggable="true" ondragstart="drag(event)" width="300" height="270">
+                </div>
+            </div>
+
+        </section>
+        <!-- contact section ends -->
+
+        <!--location start-->
+        <section class="location" id="location">
+            <h1 class="heading"> Location</h1>
+            <div class="container1">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.83544815758827!2d122.95645617321162!3d14.114491695861878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3398ae598ab7e2fb%3A0xd8eee11ee46831aa!2sGoldilocks!5e0!3m2!1sen!2sph!4v1706547105653!5m2!1sen!2sph" 
+                    width="600" height="400" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="button-container">
+                    <button onclick="getLocation()">Find my location</button>
+                    <p id="demo"></p>
+                </div>
+            </div>         
+        </section>
+        <!--location end-->
+
+
+       
+        <!-- footer section starts  -->
+        <footer>
+            <div class="credit"> Created by <span> Reymar F. Villanueva </span> | BSIT - 2B </div>
+        </footer>
+        <!-- footer section ends -->
+
+            
+    </body>
+</html>
